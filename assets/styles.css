@@ -26,10 +26,15 @@
     font-family: "uimockup";
 }
 
+.ubuntu{
+    font-family: "ubuntu mono", Tahoma;
+}
+
 /* General Classes */
 
 * {
     color: black;
+    scroll-behavior: smooth;
 }
 
 .tab{
@@ -50,9 +55,9 @@
 
 /* Body */
 
-
 body{
     font-family: "ubuntu mono", Tahoma;
+    overflow-y: hidden;
 }
 
 @media (min-width: 576px) {
@@ -62,63 +67,128 @@ body{
     
 }
 
-.social a{
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+header a{
     text-decoration: none;
     color: black;
 }
 
-.social a:hover{
+header a:hover{
     text-decoration: underline;
+    color: black;
 }
 
-
-/* Header */
-
-@media (min-width: 992px) { 
-    .info-icon-div{
-        margin-top: 30px;
-    }
+main{
+    width: 400%;
+    height: 100%;
+    display: flex;
 }
 
-/* About Us */
-
-ul{
-    margin-top: 40px;
+section{
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
 }
 
-ul p{
-    font-size: 14px;
+/* Grid Sections 2x2 */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
 }
 
-.symbol-size{
+/* Grid Cell Section Irregular*/
+
+.quarter-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.quarter-3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#earth-link{
+    margin-top: 90%;
+    text-align: center;
+    padding-left: 50px;
+}
+
+#wwd-icon{
+    margin-left: 17%;
+}
+
+#arrow{
+    margin-left: 50%;
+}
+
+/* Content Cell */
+
+.list-whatwedo{
+    list-style: none;
+    padding-left: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list-whatwedo > li {
     font-size: 20px;
 }
 
-.interlineado-list{
-    line-height: 20px!important;
+#undercon{
+    text-align: right;
 }
 
-.mini{
-    font-size: 12px;
-    margin-top: 50px;
+#const{
+    width: 70%;
+    transform: translate(0, 40%) rotate(10deg);
 }
 
-
-.paragraph{
-    margin-top: 20px;
-    line-height: 24px;
+#compu{
+    width: 100%;
 }
 
+.text-container{
+    height: 100%;
+}
 
-/* Footer */
+.text-container > p{
+    font-size: 16px;
+    height: 100%;
+    vertical-align: middle;
+    transform: translateY(25%);
+    padding-left: 15px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
 
 #logo{
-    width: 100%;
-    height: auto;
+    width: 80%;
+    transform: translate(-2%, 60%);
 }
 
-@media (min-width: 769px) { 
-    #logo{
-        width: 50%;
-    }
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
 }
