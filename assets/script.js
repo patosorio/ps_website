@@ -1,5 +1,3 @@
 $(document).ready(function() {
-    var height = $("#container").height();
-    $("#container").css({"height": height-30})
-
+    $("#container").css({"height": height_container-30});
 });
