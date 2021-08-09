@@ -277,9 +277,8 @@ body{
     }
 
     #red-text{
-        grid-column: 5 / 9;
+        grid-column: 4 / 9;
         grid-row: 3;
-        padding-left: 15px;
     }
 
     #new-icon{
